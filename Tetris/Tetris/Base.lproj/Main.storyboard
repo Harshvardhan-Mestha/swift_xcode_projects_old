@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vGb-hJ-iAC">
+                                <rect key="frame" x="72" y="108" width="270" height="540"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NUY-nz-Cfj">
+                                        <rect key="frame" x="0.0" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8HM-MZ-HYo">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qpF-gt-JY5">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="vU2-b5-sdi">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="2k7-mT-uvL">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xYo-gS-ZVc">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WCY-ks-CfZ">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="MHc-Vq-8lh">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="pir-ig-2pA">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-aS-8PC">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-Ey-9IW">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-oX-eOV">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jJJ-ti-uwk">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="w2z-E4-c6K">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="in5-fw-XlX">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-Cc-chX">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="A7s-7C-RCW">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="g9p-A1-caS">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-Yq-nMa">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="W80-44-arq">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-HZ-GYf">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="PVw-8H-Mea">
+                                        <rect key="frame" x="27" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z6s-Pc-NKb">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="zVN-if-DFS">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="gtB-ST-2eK">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-5V-Bcm">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8yn-Im-rlL">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xLZ-ol-ece">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="eUy-5T-zSO">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="lib-Ob-yRT">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-uI-zDa">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-U8-DeA">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-Kg-dWF">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Guu-KY-TB1">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-I0-zsz">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sm2-KN-sDp">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Duv-yO-ykw">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-Ov-Vfm">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-vR-MNg">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="GzD-sD-c5X">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-ur-Lb3">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="U4k-XS-AeC">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2Ei-XO-Eml">
+                                        <rect key="frame" x="54" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ljH-oP-0AG">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-oz-oQ6">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="PUe-Az-6Kf">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-Se-DCu">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xXR-F9-It8">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-bc-PAj">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="5wg-qb-ncV">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fZg-YS-s73">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ARK-Va-vpK">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-5T-Tu9">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="6DL-0k-hpm">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="lqh-0V-V77">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="5el-Ox-TL3">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-Yy-qpT">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="kmA-YY-8wi">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="kUV-dL-bnU">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ORT-oP-JeA">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="OhX-JB-KOo">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="nC6-ER-e35" userLabel="I13">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="YFe-2E-AtA">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-7R-lqT">
+                                        <rect key="frame" x="81" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="D4O-O4-Ilg">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-9h-TXf">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="DS0-JY-cv2">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="66q-kt-lvl">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fjk-sD-tlX">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-iK-fmZ">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="PJq-s0-dnT">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="sfu-20-mAS">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="6zF-Eh-h9L">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Wo-vO-Uaq">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="N0V-iX-pc7">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="b6v-1m-fDr">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nyl-xC-FEs">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="UUB-cZ-UZu">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="anA-lr-MnO">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="imR-6X-Qwn">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="mra-w2-Hqb">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="vZj-M7-klD">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xtU-b3-vmg">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7CZ-5c-jI7">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-Me-TdX">
+                                        <rect key="frame" x="108" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="U20-0C-Y1r">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="n2m-dM-GRd">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ruZ-yD-plh">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="grL-Yg-8iz">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-U7-FeB">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="mbL-th-aBQ">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fYr-e2-nwT">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="a7Q-K7-KRb">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="lVO-xh-YdJ">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jB6-tK-MGA">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="MR2-n3-Alb">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-1u-dmV">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="kUE-g6-tbv">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="5da-XD-Yaw">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="5jB-8Z-cGX">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="LA2-Pb-Dxf">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="0fj-s2-4Qe">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Lx-gw-e5w">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="dU6-QE-inX">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="J93-yv-pfO">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4BZ-fW-0Ys">
+                                        <rect key="frame" x="135" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xCA-GD-yaI">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="GaH-gk-GtU">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-uo-mIl">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-7v-Muc">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="a04-F8-f2v">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="L6C-MS-F27">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="cv6-Iq-kvg">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="6ar-NG-IEf">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="DIs-fg-NMN">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="epO-HW-I3S">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-4b-2ya">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-ue-gXF">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="7iU-UP-aw2">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="viK-ZU-rni">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="1on-oP-p7I">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="YqO-9O-WgM">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="zRS-F3-zLP">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="hnF-dJ-Sog">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-vs-RqP">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="rGh-BL-748">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vqu-eo-fh1">
+                                        <rect key="frame" x="162" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ong-YB-NeC">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="hma-CA-hsP">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="dki-M6-L2R">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="EkR-iO-enh">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="E4k-qo-OmM">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-cu-Jvw">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-M5-uE3">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ApA-aL-qMT">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qNg-7v-xnB">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="psQ-ST-loO">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jCy-KH-kTo">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="iy0-fG-iZT">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-nW-9BT">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="aOy-2r-P5U">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8FT-ZW-UMw">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="ptY-ai-pBo">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-U2-xpR">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xbW-8D-wH2">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="9Ut-hP-94C">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xyI-CV-v5R">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-eS-fCl">
+                                        <rect key="frame" x="189" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qph-pS-L62">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="T8b-sR-k2e">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="rwe-d2-DVi">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="XcY-MJ-ccw">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-5a-XHE">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="moW-gm-gjl">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="VT1-9S-NvJ">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qfc-vU-hgN">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fMg-zr-0RT">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="FjV-kK-o3R">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jZ9-L3-kEF">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="LTU-nw-1Ha">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-LX-TnD">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="lSg-1A-eXz">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="teg-E4-3Kk">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="p5r-Tb-0WZ">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="qY6-LX-D7p">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="HRD-na-cBu">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-pL-h1r">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WZc-7g-iRJ">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-8Z-BEO">
+                                        <rect key="frame" x="216" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WcE-qz-gaO">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="wkw-PS-9tc">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-ZZ-G5C">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-4t-Pua">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="QkA-V9-Gm7">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Te-7s-eHX">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="WI7-d4-J5z">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="MkC-Sv-BRh">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="zwb-HP-bat">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="teS-UZ-Q6c">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFS-Rd-34L">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="x5w-wn-83f">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-4E-dgn">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="bg1-j1-0kr">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-LW-JrF">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xth-FI-AP5">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ifp-I8-hvS">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="6wH-cG-sW6">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="tbT-tO-snx">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-tJ-OyA">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-qN-m7w">
+                                        <rect key="frame" x="243" y="0.0" width="27" height="540"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-Yg-EaZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-Gj-L8s">
+                                                <rect key="frame" x="0.0" y="27" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="l9u-uw-Y1Y">
+                                                <rect key="frame" x="0.0" y="54" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="XyR-Vs-duI">
+                                                <rect key="frame" x="0.0" y="81" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="IiU-We-DmX">
+                                                <rect key="frame" x="0.0" y="108" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mmt-s0-3Tt">
+                                                <rect key="frame" x="0.0" y="135" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="xec-dk-gkI">
+                                                <rect key="frame" x="0.0" y="162" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="bZt-Cg-STK">
+                                                <rect key="frame" x="0.0" y="189" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-V6-Lkf">
+                                                <rect key="frame" x="0.0" y="216" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="z8y-R8-17I">
+                                                <rect key="frame" x="0.0" y="243" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-2P-bhB">
+                                                <rect key="frame" x="0.0" y="270" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fSD-Ha-b3O">
+                                                <rect key="frame" x="0.0" y="297" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="474-j9-1wL">
+                                                <rect key="frame" x="0.0" y="324" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="OFw-qH-pGZ">
+                                                <rect key="frame" x="0.0" y="351" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-IU-H2q">
+                                                <rect key="frame" x="0.0" y="378" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="0ph-is-9Nu">
+                                                <rect key="frame" x="0.0" y="405" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="hJm-rX-bCI">
+                                                <rect key="frame" x="0.0" y="432" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="jNF-Bs-0fq">
+                                                <rect key="frame" x="0.0" y="459" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="EkQ-or-rhP">
+                                                <rect key="frame" x="0.0" y="486" width="27" height="27"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="27" placeholderIntrinsicHeight="27" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="oei-zS-L6w">
+                                                <rect key="frame" x="0.0" y="513" width="27" height="27"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLl-Cv-V3K">
+                                <rect key="frame" x="0.0" y="656" width="104" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="dow"/>
+                                <connections>
+                                    <action selector="b1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGK-Nf-XQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgN-DX-Emh">
+                                <rect key="frame" x="104" y="656" width="103" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="rot"/>
+                                <connections>
+                                    <action selector="b2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6FC-L9-K3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-ei-11R">
+                                <rect key="frame" x="207" y="656" width="104" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="lef"/>
+                                <connections>
+                                    <action selector="b3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USV-Oc-Ttc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omM-fG-Ilo">
+                                <rect key="frame" x="311" y="656" width="103" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="rig"/>
+                                <connections>
+                                    <action selector="b4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MS5-Js-Kfq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vob-im-uhw">
+                                <rect key="frame" x="0.0" y="20" width="207" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1960761845" green="0.19607689980000001" blue="0.1960784793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlq-xT-uDS">
+                                <rect key="frame" x="223" y="20" width="45" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-ig-29U">
+                                <rect key="frame" x="228" y="61" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jk-fI-FRi">
+                                <rect key="frame" x="330" y="60" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-Do-0AI">
+                                <rect key="frame" x="330" y="26" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgP-6p-dub">
+                                <rect key="frame" x="359" y="346" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vGb-hJ-iAC" secondAttribute="bottom" constant="88" id="PSQ-wO-H5t"/>
+                            <constraint firstItem="vGb-hJ-iAC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="fPY-hZ-aA3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vGb-hJ-iAC" secondAttribute="trailing" constant="72" id="fuq-F1-M6H"/>
+                            <constraint firstItem="vGb-hJ-iAC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="uO9-Ff-WWD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="B2" destination="cgN-DX-Emh" id="iRi-n9-BSD"/>
+                        <outlet property="B3" destination="7Zz-ei-11R" id="BFc-YG-SFb"/>
+                        <outlet property="B4" destination="omM-fG-Ilo" id="BLC-Kr-aAZ"/>
+                        <outlet property="B5" destination="vob-im-uhw" id="XT9-LL-lXi"/>
+                        <outlet property="I1" destination="bpe-HZ-GYf" id="F9F-Cw-9hD"/>
+                        <outlet property="I10" destination="oei-zS-L6w" id="m4O-wL-oTD"/>
+                        <outlet property="I100" destination="XK3-2P-bhB" id="smy-oM-Fcl"/>
+                        <outlet property="I101" destination="XLI-Ey-9IW" id="ti1-wR-sVG"/>
+                        <outlet property="I102" destination="LmC-U8-DeA" id="t8x-ms-Yqf"/>
+                        <outlet property="I103" destination="gPF-5T-Tu9" id="Il6-OJ-aPL"/>
+                        <outlet property="I104" destination="7Wo-vO-Uaq" id="ZAP-8f-Edw"/>
+                        <outlet property="I105" destination="jB6-tK-MGA" id="Ber-WD-dBf"/>
+                        <outlet property="I106" destination="epO-HW-I3S" id="rtE-tl-PIW"/>
+                        <outlet property="I107" destination="psQ-ST-loO" id="Lxy-gr-egC"/>
+                        <outlet property="I108" destination="FjV-kK-o3R" id="WVI-Mu-4h9"/>
+                        <outlet property="I109" destination="teS-UZ-Q6c" id="CDM-TI-d9a"/>
+                        <outlet property="I11" destination="W80-44-arq" id="Hm8-Te-d5E"/>
+                        <outlet property="I110" destination="z8y-R8-17I" id="DoG-zu-kAb"/>
+                        <outlet property="I111" destination="RdB-aS-8PC" id="Ig4-2s-zN1"/>
+                        <outlet property="I112" destination="2X1-uI-zDa" id="nUg-go-t5R"/>
+                        <outlet property="I113" destination="ARK-Va-vpK" id="BdF-xh-jas"/>
+                        <outlet property="I114" destination="6zF-Eh-h9L" id="2r9-l3-hPR"/>
+                        <outlet property="I115" destination="lVO-xh-YdJ" id="M7q-NF-GUa"/>
+                        <outlet property="I116" destination="DIs-fg-NMN" id="nxh-28-Uvd"/>
+                        <outlet property="I117" destination="qNg-7v-xnB" id="uX6-Y4-B1H"/>
+                        <outlet property="I118" destination="fMg-zr-0RT" id="E6X-BB-KWH"/>
+                        <outlet property="I119" destination="zwb-HP-bat" id="Hp9-w1-1pg"/>
+                        <outlet property="I12" destination="D5L-ur-Lb3" id="Clh-5n-aqd"/>
+                        <outlet property="I120" destination="rYh-V6-Lkf" id="RFp-to-bKi"/>
+                        <outlet property="I121" destination="pir-ig-2pA" id="WIc-CB-gNE"/>
+                        <outlet property="I122" destination="lib-Ob-yRT" id="3zD-xQ-xij"/>
+                        <outlet property="I123" destination="fZg-YS-s73" id="cIy-fo-mfd"/>
+                        <outlet property="I124" destination="sfu-20-mAS" id="rHX-Ok-PQQ"/>
+                        <outlet property="I125" destination="a7Q-K7-KRb" id="D4u-1k-fOR"/>
+                        <outlet property="I126" destination="6ar-NG-IEf" id="pWH-Xe-ulb"/>
+                        <outlet property="I127" destination="ApA-aL-qMT" id="5ep-O2-rqf"/>
+                        <outlet property="I128" destination="qfc-vU-hgN" id="Yhm-u2-Z55"/>
+                        <outlet property="I129" destination="MkC-Sv-BRh" id="YV2-VU-0PY"/>
+                        <outlet property="I13" destination="nC6-ER-e35" id="WT6-iG-Yd1"/>
+                        <outlet property="I130" destination="bZt-Cg-STK" id="8Iw-re-dLG"/>
+                        <outlet property="I131" destination="MHc-Vq-8lh" id="4Dj-8P-U8A"/>
+                        <outlet property="I132" destination="eUy-5T-zSO" id="Rno-ga-nSR"/>
+                        <outlet property="I133" destination="5wg-qb-ncV" id="EHr-el-M2b"/>
+                        <outlet property="I134" destination="PJq-s0-dnT" id="WgU-1M-jbA"/>
+                        <outlet property="I135" destination="fYr-e2-nwT" id="cXA-LO-4C2"/>
+                        <outlet property="I136" destination="cv6-Iq-kvg" id="OND-6W-BYb"/>
+                        <outlet property="I137" destination="zcb-M5-uE3" id="oYE-DY-jIg"/>
+                        <outlet property="I138" destination="VT1-9S-NvJ" id="fU8-ga-vDD"/>
+                        <outlet property="I139" destination="WI7-d4-J5z" id="YEx-Ke-XsI"/>
+                        <outlet property="I14" destination="xtU-b3-vmg" id="XAF-US-5rx"/>
+                        <outlet property="I140" destination="xec-dk-gkI" id="XfY-Ms-WPP"/>
+                        <outlet property="I141" destination="WCY-ks-CfZ" id="jcs-eU-Z24"/>
+                        <outlet property="I142" destination="xLZ-ol-ece" id="MgG-Kl-V1p"/>
+                        <outlet property="I143" destination="WHK-bc-PAj" id="8G8-B8-Ftd"/>
+                        <outlet property="I144" destination="cgF-iK-fmZ" id="zgH-Ip-2ga"/>
+                        <outlet property="I145" destination="mbL-th-aBQ" id="C4l-Nv-DL3"/>
+                        <outlet property="I146" destination="L6C-MS-F27" id="ao9-vq-laF"/>
+                        <outlet property="I147" destination="Bpo-cu-Jvw" id="bmE-yC-Bmt"/>
+                        <outlet property="I148" destination="moW-gm-gjl" id="vNu-t7-XiS"/>
+                        <outlet property="I149" destination="8Te-7s-eHX" id="wUT-1P-ZGg"/>
+                        <outlet property="I15" destination="dU6-QE-inX" id="aVV-Qf-nUj"/>
+                        <outlet property="I150" destination="Mmt-s0-3Tt" id="jvM-5Q-CMt"/>
+                        <outlet property="I151" destination="xYo-gS-ZVc" id="nXF-je-f4r"/>
+                        <outlet property="I152" destination="8yn-Im-rlL" id="Nvg-dq-UI9"/>
+                        <outlet property="I153" destination="xXR-F9-It8" id="ldg-05-c1H"/>
+                        <outlet property="I154" destination="fjk-sD-tlX" id="91K-KQ-6ve"/>
+                        <outlet property="I155" destination="aWf-U7-FeB" id="6xN-rR-RSZ"/>
+                        <outlet property="I156" destination="a04-F8-f2v" id="8AS-hg-ace"/>
+                        <outlet property="I157" destination="E4k-qo-OmM" id="Ps1-Yo-Yz6"/>
+                        <outlet property="I158" destination="hdq-5a-XHE" id="7pH-WN-EsF"/>
+                        <outlet property="I159" destination="QkA-V9-Gm7" id="mWx-R0-QpT"/>
+                        <outlet property="I16" destination="iiK-vs-RqP" id="do8-eJ-DJv"/>
+                        <outlet property="I160" destination="IiU-We-DmX" id="6lz-eK-sDI"/>
+                        <outlet property="I161" destination="2k7-mT-uvL" id="xIM-j9-9YO"/>
+                        <outlet property="I162" destination="tAw-5V-Bcm" id="naF-Nn-JOD"/>
+                        <outlet property="I163" destination="0EB-Se-DCu" id="TLV-Mp-rS7"/>
+                        <outlet property="I164" destination="66q-kt-lvl" id="DHL-yq-WAi"/>
+                        <outlet property="I165" destination="grL-Yg-8iz" id="rXC-eK-x7e"/>
+                        <outlet property="I166" destination="jyK-7v-Muc" id="dFy-Mp-6b0"/>
+                        <outlet property="I167" destination="EkR-iO-enh" id="fmy-xG-2ui"/>
+                        <outlet property="I168" destination="XcY-MJ-ccw" id="icH-bZ-ijq"/>
+                        <outlet property="I169" destination="oeg-4t-Pua" id="qFU-v5-wHF"/>
+                        <outlet property="I17" destination="9Ut-hP-94C" id="6Kg-I1-v01"/>
+                        <outlet property="I170" destination="XyR-Vs-duI" id="6Zf-MC-fIh"/>
+                        <outlet property="I171" destination="vU2-b5-sdi" id="uy8-vC-nOV"/>
+                        <outlet property="I172" destination="gtB-ST-2eK" id="EWn-d9-IT6"/>
+                        <outlet property="I173" destination="PUe-Az-6Kf" id="Vqz-Oz-yC1"/>
+                        <outlet property="I174" destination="DS0-JY-cv2" id="dLX-Cg-kRU"/>
+                        <outlet property="I175" destination="ruZ-yD-plh" id="LA6-9j-q44"/>
+                        <outlet property="I176" destination="7vI-uo-mIl" id="0Kd-6d-A6b"/>
+                        <outlet property="I177" destination="dki-M6-L2R" id="Fsi-i2-IwS"/>
+                        <outlet property="I178" destination="rwe-d2-DVi" id="c0X-eD-miE"/>
+                        <outlet property="I179" destination="UGs-ZZ-G5C" id="V4x-jV-cHE"/>
+                        <outlet property="I18" destination="nS8-pL-h1r" id="ubK-Yd-ETM"/>
+                        <outlet property="I180" destination="l9u-uw-Y1Y" id="pys-nd-yNy"/>
+                        <outlet property="I181" destination="qpF-gt-JY5" id="wrU-Pm-4Nu"/>
+                        <outlet property="I182" destination="zVN-if-DFS" id="nc4-Z7-luA"/>
+                        <outlet property="I183" destination="EP4-oz-oQ6" id="GCS-L4-pcg"/>
+                        <outlet property="I184" destination="fyd-9h-TXf" id="JFr-iE-hmk"/>
+                        <outlet property="I185" destination="n2m-dM-GRd" id="CBP-Uf-LF7"/>
+                        <outlet property="I186" destination="GaH-gk-GtU" id="PMq-zl-2eZ"/>
+                        <outlet property="I187" destination="hma-CA-hsP" id="HMB-4D-03v"/>
+                        <outlet property="I188" destination="T8b-sR-k2e" id="Req-aL-F8g"/>
+                        <outlet property="I189" destination="wkw-PS-9tc" id="LtW-uQ-DI8"/>
+                        <outlet property="I19" destination="tbT-tO-snx" id="fCG-7r-Vkc"/>
+                        <outlet property="I190" destination="j4c-Gj-L8s" id="0vn-ew-GI4"/>
+                        <outlet property="I191" destination="8HM-MZ-HYo" id="d34-gx-Bzb"/>
+                        <outlet property="I192" destination="Z6s-Pc-NKb" id="tSd-kp-4Zh"/>
+                        <outlet property="I193" destination="ljH-oP-0AG" id="up6-uL-GqX"/>
+                        <outlet property="I194" destination="D4O-O4-Ilg" id="hUs-JW-0Nb"/>
+                        <outlet property="I195" destination="U20-0C-Y1r" id="Ixa-W7-I03"/>
+                        <outlet property="I196" destination="xCA-GD-yaI" id="bf3-MT-8v1"/>
+                        <outlet property="I197" destination="Ong-YB-NeC" id="lJq-tE-TlS"/>
+                        <outlet property="I198" destination="qph-pS-L62" id="b8L-ML-fuI"/>
+                        <outlet property="I199" destination="WcE-qz-gaO" id="GfK-rD-fXK"/>
+                        <outlet property="I2" destination="U4k-XS-AeC" id="VPU-x1-gsG"/>
+                        <outlet property="I20" destination="EkQ-or-rhP" id="RtE-Jp-Fk1"/>
+                        <outlet property="I200" destination="dRW-Yg-EaZ" id="H3s-Mj-VvU"/>
+                        <outlet property="I21" destination="lxu-Yq-nMa" id="hrn-Kb-QDp"/>
+                        <outlet property="I22" destination="GzD-sD-c5X" id="dKJ-4k-Rav"/>
+                        <outlet property="I23" destination="OhX-JB-KOo" id="1gQ-L1-eCY"/>
+                        <outlet property="I24" destination="vZj-M7-klD" id="YO3-Rp-iU3"/>
+                        <outlet property="I25" destination="0Lx-gw-e5w" id="Rq2-bc-SjX"/>
+                        <outlet property="I26" destination="hnF-dJ-Sog" id="XTE-25-GHt"/>
+                        <outlet property="I27" destination="xbW-8D-wH2" id="WQq-PF-36P"/>
+                        <outlet property="I28" destination="HRD-na-cBu" id="xGK-lP-aB1"/>
+                        <outlet property="I29" destination="6wH-cG-sW6" id="c0f-TU-SSN"/>
+                        <outlet property="I3" destination="YFe-2E-AtA" id="yCY-sO-kTc"/>
+                        <outlet property="I30" destination="jNF-Bs-0fq" id="PbF-mW-Ab0"/>
+                        <outlet property="I31" destination="g9p-A1-caS" id="UQX-nT-rmd"/>
+                        <outlet property="I32" destination="SQY-vR-MNg" id="Flf-l9-Poh"/>
+                        <outlet property="I33" destination="ORT-oP-JeA" id="Hjm-ab-hDl"/>
+                        <outlet property="I34" destination="mra-w2-Hqb" id="2uV-UO-98B"/>
+                        <outlet property="I35" destination="0fj-s2-4Qe" id="DM9-s4-hfB"/>
+                        <outlet property="I36" destination="zRS-F3-zLP" id="wa6-iS-fCc"/>
+                        <outlet property="I37" destination="WZS-U2-xpR" id="lUR-pj-ASa"/>
+                        <outlet property="I38" destination="qY6-LX-D7p" id="OPc-Aj-WRW"/>
+                        <outlet property="I39" destination="Ifp-I8-hvS" id="sxg-64-dYi"/>
+                        <outlet property="I4" destination="7CZ-5c-jI7" id="oCg-qY-9bF"/>
+                        <outlet property="I40" destination="hJm-rX-bCI" id="lvR-Bp-Rfz"/>
+                        <outlet property="I41" destination="A7s-7C-RCW" id="qQm-Vm-Kt7"/>
+                        <outlet property="I42" destination="G3r-Ov-Vfm" id="QRs-dy-bbp"/>
+                        <outlet property="I43" destination="kUV-dL-bnU" id="wg3-rK-tuI"/>
+                        <outlet property="I44" destination="imR-6X-Qwn" id="Kgu-3a-lSD"/>
+                        <outlet property="I45" destination="LA2-Pb-Dxf" id="O55-0h-4Ur"/>
+                        <outlet property="I46" destination="YqO-9O-WgM" id="GPv-yc-VMO"/>
+                        <outlet property="I47" destination="ptY-ai-pBo" id="98f-NH-Nvn"/>
+                        <outlet property="I48" destination="p5r-Tb-0WZ" id="dKI-3F-5m1"/>
+                        <outlet property="I49" destination="xth-FI-AP5" id="SNu-7o-LEM"/>
+                        <outlet property="I5" destination="J93-yv-pfO" id="dtL-aM-u3T"/>
+                        <outlet property="I50" destination="0ph-is-9Nu" id="5cV-3e-HoH"/>
+                        <outlet property="I51" destination="Hfx-Cc-chX" id="75L-1T-5uS"/>
+                        <outlet property="I52" destination="Duv-yO-ykw" id="H0E-e2-ox3"/>
+                        <outlet property="I53" destination="kmA-YY-8wi" id="sbs-Cr-lIk"/>
+                        <outlet property="I54" destination="anA-lr-MnO" id="1Mp-xh-szD"/>
+                        <outlet property="I55" destination="5jB-8Z-cGX" id="2Dn-Lt-u99"/>
+                        <outlet property="I56" destination="1on-oP-p7I" id="B6a-eF-1up"/>
+                        <outlet property="I57" destination="8FT-ZW-UMw" id="X1R-dP-MB6"/>
+                        <outlet property="I58" destination="teg-E4-3Kk" id="XD2-1t-TUo"/>
+                        <outlet property="I59" destination="O6r-LW-JrF" id="apP-Ky-KRy"/>
+                        <outlet property="I6" destination="rGh-BL-748" id="4zy-Ev-O3H"/>
+                        <outlet property="I60" destination="UUJ-IU-H2q" id="5R9-YJ-5mK"/>
+                        <outlet property="I61" destination="in5-fw-XlX" id="nna-n2-SaL"/>
+                        <outlet property="I62" destination="Sm2-KN-sDp" id="MIC-EI-NfP"/>
+                        <outlet property="I63" destination="7SJ-Yy-qpT" id="tGb-df-pj8"/>
+                        <outlet property="I64" destination="UUB-cZ-UZu" id="OZb-nP-fOt"/>
+                        <outlet property="I65" destination="5da-XD-Yaw" id="UD4-YC-8HT"/>
+                        <outlet property="I66" destination="viK-ZU-rni" id="OXq-gY-gYS"/>
+                        <outlet property="I67" destination="aOy-2r-P5U" id="d9N-bp-nKM"/>
+                        <outlet property="I68" destination="lSg-1A-eXz" id="idT-gK-HEY"/>
+                        <outlet property="I69" destination="bg1-j1-0kr" id="BD2-0H-iiu"/>
+                        <outlet property="I7" destination="xyI-CV-v5R" id="YRo-9E-jfE"/>
+                        <outlet property="I70" destination="OFw-qH-pGZ" id="U5V-x4-yVG"/>
+                        <outlet property="I71" destination="w2z-E4-c6K" id="1Ya-N5-BSY"/>
+                        <outlet property="I72" destination="AQa-I0-zsz" id="V6d-0Z-6qD"/>
+                        <outlet property="I73" destination="5el-Ox-TL3" id="Hgf-Xe-LI3"/>
+                        <outlet property="I74" destination="Nyl-xC-FEs" id="jRy-dJ-oJM"/>
+                        <outlet property="I75" destination="kUE-g6-tbv" id="OyB-Ks-YlU"/>
+                        <outlet property="I76" destination="7iU-UP-aw2" id="SuB-Y2-sDF"/>
+                        <outlet property="I77" destination="zdB-nW-9BT" id="f7D-AR-91t"/>
+                        <outlet property="I78" destination="XSU-LX-TnD" id="4lv-Ea-CHd"/>
+                        <outlet property="I79" destination="dZg-4E-dgn" id="jWF-pk-5hI"/>
+                        <outlet property="I8" destination="WZc-7g-iRJ" id="c1K-tG-Y1u"/>
+                        <outlet property="I80" destination="474-j9-1wL" id="iQZ-Ri-bDV"/>
+                        <outlet property="I81" destination="jJJ-ti-uwk" id="JaH-tW-oDR"/>
+                        <outlet property="I82" destination="Guu-KY-TB1" id="FjP-DS-IYu"/>
+                        <outlet property="I83" destination="lqh-0V-V77" id="iFy-Uv-w9b"/>
+                        <outlet property="I84" destination="b6v-1m-fDr" id="twg-Yd-VXs"/>
+                        <outlet property="I85" destination="R1u-1u-dmV" id="UXr-Nz-kU8"/>
+                        <outlet property="I86" destination="9a3-ue-gXF" id="XVu-cn-OWR"/>
+                        <outlet property="I87" destination="iy0-fG-iZT" id="qm2-AG-F2R"/>
+                        <outlet property="I88" destination="LTU-nw-1Ha" id="EZD-2d-5J1"/>
+                        <outlet property="I89" destination="x5w-wn-83f" id="CUe-0m-46r"/>
+                        <outlet property="I9" destination="OpA-tJ-OyA" id="Gde-nN-blL"/>
+                        <outlet property="I90" destination="fSD-Ha-b3O" id="4RD-tk-W71"/>
+                        <outlet property="I91" destination="0ht-oX-eOV" id="EHv-2i-LLj"/>
+                        <outlet property="I92" destination="mbe-Kg-dWF" id="i8Q-LI-GNb"/>
+                        <outlet property="I93" destination="6DL-0k-hpm" id="d1y-kD-FY1"/>
+                        <outlet property="I94" destination="N0V-iX-pc7" id="bhn-rS-Jpj"/>
+                        <outlet property="I95" destination="MR2-n3-Alb" id="WFK-uX-QtG"/>
+                        <outlet property="I96" destination="3Fc-4b-2ya" id="esD-UO-dvR"/>
+                        <outlet property="I97" destination="jCy-KH-kTo" id="G61-18-Pna"/>
+                        <outlet property="I98" destination="jZ9-L3-kEF" id="BcF-op-50f"/>
+                        <outlet property="I99" destination="TFS-Rd-34L" id="Kod-C0-EZ7"/>
+                        <outlet property="score" destination="ayd-ig-29U" id="0Xa-cu-I9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.61956521739131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="340" height="340"/>
+        <image name="dow" width="260" height="200"/>
+        <image name="lef" width="260" height="200"/>
+        <image name="rig" width="260" height="200"/>
+        <image name="rot" width="260" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

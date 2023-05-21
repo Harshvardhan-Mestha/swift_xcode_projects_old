@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentVersion</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Chapter 1</string>
+	<key>Pages</key>
+	<array>
+		<string>UIActivityIndicatorView.playgroundpage</string>
+		<string>UIButton.playgroundpage</string>
+		<string>UIView.playgroundpage</string>
+		<string>UIDatePicker.playgroundpage</string>
+		<string>UITextView.playgroundpage</string>
+		<string>UIPickerView.playgroundpage</string>
+		<string>UISlider.playgroundpage</string>
+		<string>UISegmentedControl.playgroundpage</string>
+		<string>UIImageView.playgroundpage</string>
+		<string>UIPageControl.playgroundpage</string>
+		<string>UIWebView.playgroundpage</string>
+		<string>UIColor.playgroundpage</string>
+		<string>UITableView.playgroundpage</string>
+		<string>UIProgressView.playgroundpage</string>
+		<string>UISwitch.playgroundpage</string>
+		<string>UIStepper.playgroundpage</string>
+		<string>UICollectionView.playgroundpage</string>
+		<string>UITextField.playgroundpage</string>
+		<string>SKView.playgroundpage</string>
+		<string>UIScrollView.playgroundpage</string>
+		<string>UILabel.playgroundpage</string>
+	</array>
+	<key>Version</key>
+	<string>1.0</string>
+</dict>
+</plist>
